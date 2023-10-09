@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/906a36d769.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <img src="images/moon.png" id="icon">
+                </ul>
+                <i class="fa-solid fa-bars " onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>
+                    Software Developer
+                </p>
+                <h1>Hi I'm <span>Ankur Varshney</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptates dignissimos quo incidunt odio eius veritatis, corporis repellendus praesentium perferendis ducimus eligendi, odit maxime omnis delectus. Eum dolores, repudiandae maxime consequuntur ratione minima consectetur aut quo quae modi? Voluptas, ut! Recusandae ratione repellat consequuntur. Fuga nemo animi nesciunt a id?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web app interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>DSA</span><br>Python and C++ Language</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July 21 - August 21</span><br>Gaphic Designer @ Shobbr.com</li>
+                            <li><span>UI/UX</span><br>Designing Web apps</li>
+                        </ul>
+                    </div><div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B-Tech</span><br>Computer Science (Data Science) Engineering at ABESEC</li>
+                            <li><span>Senior-Secondary School</span><br>Vanasthali Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Servies</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sapiente totam veritatis impedit repellat repudiandae ipsa voluptates laborum nostrum obcaecati quam nihil eveniet blanditiis, atque rem porro temporibus modi earum.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Problem Solving</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sapiente totam veritatis impedit repellat repudiandae ipsa voluptates laborum nostrum obcaecati quam nihil eveniet blanditiis, atque rem porro temporibus modi earum.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>Software Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sapiente totam veritatis impedit repellat repudiandae ipsa voluptates laborum nostrum obcaecati quam nihil eveniet blanditiis, atque rem porro temporibus modi earum.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>ankurvarshney1302@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9958873253</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/ankur.v.1302"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/Ankur_varshney_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Ankur varshney<i class="fa-solid fa-copyright"></i></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
